@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# Environment variables (IMPORTANT!)
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +30,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Lock files (keep package-lock.json, ignore others)
+bun.lockb
+yarn.lock
+pnpm-lock.yaml

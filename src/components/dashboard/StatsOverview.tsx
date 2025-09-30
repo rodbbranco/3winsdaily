@@ -75,7 +75,7 @@ export const StatsOverview = () => {
   return (
     <div className="grid gap-4 md:grid-cols-3">
       <Card className="p-6 shadow-card">
-        <div className="flex items-center justify-center gap-3">
+        <div className="flex lg:flex-col items-center justify-center gap-3">
           <div className="w-10 h-10 flex-shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
             <BarChart3 className="w-5 h-5 text-primary flex-shrink-0" />
           </div>
@@ -87,7 +87,7 @@ export const StatsOverview = () => {
       </Card>
 
       <Card className="p-6 shadow-card">
-        <div className="flex items-center justify-center gap-3">
+        <div className="flex lg:flex-col items-center justify-center gap-3">
           <div className="w-10 h-10 flex-shrink-0 rounded-xl bg-accent/10 flex items-center justify-center">
             <Award className="w-5 h-5 text-accent flex-shrink-0" />
           </div>
@@ -99,7 +99,7 @@ export const StatsOverview = () => {
       </Card>
 
       <Card className="p-6 shadow-card">
-        <div className="flex items-center justify-center gap-3">
+        <div className="flex lg:flex-col items-center justify-center gap-3">
           <div className="w-10 h-10 flex-shrink-0 rounded-xl bg-success/10 flex items-center justify-center">
             <TrendingUp className="w-5 h-5 text-success flex-shrink-0" />
           </div>
