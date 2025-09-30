@@ -75,11 +75,11 @@ export const StatsOverview = () => {
   return (
     <div className="grid gap-4 md:grid-cols-3">
       <Card className="p-6 shadow-card">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-            <BarChart3 className="w-5 h-5 text-primary" />
+        <div className="flex items-center justify-center gap-3">
+          <div className="w-10 h-10 flex-shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
+            <BarChart3 className="w-5 h-5 text-primary flex-shrink-0" />
           </div>
-          <div>
+          <div className="flex-1 text-center">
             <p className="text-2xl font-bold">{stats.total_wins}</p>
             <p className="text-sm text-muted-foreground">Total Wins</p>
           </div>
@@ -87,11 +87,11 @@ export const StatsOverview = () => {
       </Card>
 
       <Card className="p-6 shadow-card">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">
-            <Award className="w-5 h-5 text-accent" />
+        <div className="flex items-center justify-center gap-3">
+          <div className="w-10 h-10 flex-shrink-0 rounded-xl bg-accent/10 flex items-center justify-center">
+            <Award className="w-5 h-5 text-accent flex-shrink-0" />
           </div>
-          <div>
+          <div className="flex-1 text-center">
             <p className="text-2xl font-bold">{getMostActiveCategory()}</p>
             <p className="text-sm text-muted-foreground">Top Category</p>
           </div>
@@ -99,11 +99,11 @@ export const StatsOverview = () => {
       </Card>
 
       <Card className="p-6 shadow-card">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-success/10 flex items-center justify-center">
-            <TrendingUp className="w-5 h-5 text-success" />
+        <div className="flex items-center justify-center gap-3">
+          <div className="w-10 h-10 flex-shrink-0 rounded-xl bg-success/10 flex items-center justify-center">
+            <TrendingUp className="w-5 h-5 text-success flex-shrink-0" />
           </div>
-          <div>
+          <div className="flex-1 text-center">
             <p className="text-2xl font-bold">
               {stats.total_wins > 0 ? "Active" : "Start"}
             </p>
