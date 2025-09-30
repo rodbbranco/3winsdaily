@@ -68,11 +68,13 @@ export default {
         'gradient-warm': 'var(--gradient-warm)',
         'gradient-success': 'var(--gradient-success)',
         'gradient-hero': 'var(--gradient-hero)',
+        'gradient-moody': 'var(--gradient-moody)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'card': 'var(--shadow-card)',
         'glow': 'var(--shadow-glow)',
+        'glow-pink': 'var(--shadow-glow-pink)',
       },
       transitionProperty: {
         'smooth': 'var(--transition-smooth)',
