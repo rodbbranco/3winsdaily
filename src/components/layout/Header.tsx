@@ -1,18 +1,18 @@
-import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { Sparkles, LogOut, User } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
-import { useNavigate } from "react-router-dom";
-import { toast } from "sonner";
+import {useEffect, useState} from "react";
+import {Button} from "@/components/ui/button";
+import {LogOut, Sparkles} from "lucide-react";
+import {supabase} from "@/integrations/supabase/client";
+import {useNavigate} from "react-router-dom";
+import {toast} from "sonner";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import {Avatar, AvatarFallback} from "@/components/ui/avatar";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -50,7 +50,7 @@ export const Header = () => {
             <Sparkles className="w-5 h-5 text-white" />
           </div>
           <span className="text-xl font-bold bg-gradient-warm bg-clip-text text-transparent">
-            Daily Wins
+            3WinsDaily
           </span>
         </div>
 
@@ -76,7 +76,7 @@ export const Header = () => {
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={handleSignOut}>
               <LogOut className="mr-2 h-4 w-4" />
-              Sign out
+                <p className="cursor-pointer">Sign out</p>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
