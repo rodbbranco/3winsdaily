@@ -1,4 +1,5 @@
 -- Create profiles table to store user information
+
 CREATE TABLE public.profiles (
   id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   email TEXT NOT NULL,
