@@ -7,97 +7,83 @@ All colors MUST be HSL.
 */
 
 @layer base {
-  :root {
-    /* Dark moody theme - deep purple/blue base */
-    --background: 260 40% 8%;
-    --foreground: 280 20% 95%;
+    :root {
+        /* Dark moody theme - deep purple/blue base */
+        --background: 260 40% 8%;
+        --foreground: 280 20% 95%;
 
-    /* Cards with slight purple tint */
-    --card: 260 30% 12%;
-    --card-foreground: 280 20% 95%;
+        /* Cards with slight purple tint */
+        --card: 260 30% 12%;
+        --card-foreground: 280 20% 95%;
 
-    --popover: 260 30% 12%;
-    --popover-foreground: 280 20% 95%;
+        --popover: 260 30% 12%;
+        --popover-foreground: 280 20% 95%;
 
-    /* Primary: Vibrant happy yellow */
-    --primary: 45 95% 60%;
-    --primary-foreground: 260 40% 8%;
+        /* Primary: Vibrant happy yellow */
+        --primary: 45 95% 60%;
+        --primary-foreground: 260 40% 8%;
 
-    /* Secondary: Moody deep purple */
-    --secondary: 270 50% 25%;
-    --secondary-foreground: 280 20% 95%;
+        /* Secondary: Moody deep purple */
+        --secondary: 270 50% 25%;
+        --secondary-foreground: 280 20% 95%;
 
-    /* Muted purple tones */
-    --muted: 260 25% 18%;
-    --muted-foreground: 260 15% 65%;
+        /* Muted purple tones */
+        --muted: 260 25% 18%;
+        --muted-foreground: 260 15% 65%;
 
-    /* Accent: Electric pink/magenta */
-    --accent: 320 85% 65%;
-    --accent-foreground: 260 40% 8%;
+        /* Accent: Electric pink/magenta */
+        --accent: 320 85% 65%;
+        --accent-foreground: 260 40% 8%;
 
-    /* Success: Bright happy green */
-    --success: 160 70% 55%;
-    --success-foreground: 260 40% 8%;
+        /* Success: Bright happy green */
+        --success: 160 70% 55%;
+        --success-foreground: 260 40% 8%;
 
-    /* Work category: Cool cyan */
-    --work: 190 75% 60%;
-    --work-foreground: 260 40% 8%;
+        /* Work category: Cool cyan */
+        --work: 190 75% 60%;
+        --work-foreground: 260 40% 8%;
 
-    /* Personal category: Warm coral */
-    --personal: 15 85% 65%;
-    --personal-foreground: 260 40% 8%;
+        /* Personal category: Warm coral */
+        --personal: 15 85% 65%;
+        --personal-foreground: 260 40% 8%;
 
-    /* Growth category: Vibrant lime */
-    --growth: 100 70% 60%;
-    --growth-foreground: 260 40% 8%;
+        /* Growth category: Vibrant lime */
+        --growth: 100 70% 60%;
+        --growth-foreground: 260 40% 8%;
 
-    --destructive: 0 75% 60%;
-    --destructive-foreground: 0 0% 100%;
+        --destructive: 0 75% 60%;
+        --destructive-foreground: 0 0% 100%;
 
-    --border: 260 20% 22%;
-    --input: 260 25% 18%;
-    --ring: 45 95% 60%;
+        --border: 260 20% 22%;
+        --input: 260 25% 18%;
+        --ring: 45 95% 60%;
 
-    --radius: 0.75rem;
+        --radius: 0.75rem;
 
-    /* Vibrant gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(45, 95%, 60%), hsl(320, 85%, 65%));
-    --gradient-success: linear-gradient(135deg, hsl(160, 70%, 55%), hsl(100, 70%, 60%));
-    --gradient-hero: linear-gradient(135deg, hsl(45, 95%, 60%) 0%, hsl(320, 85%, 65%) 50%, hsl(190, 75%, 60%) 100%);
-    --gradient-moody: linear-gradient(180deg, hsl(260, 40%, 8%) 0%, hsl(270, 50%, 12%) 100%);
-    
-    /* Glowy shadows */
-    --shadow-soft: 0 2px 8px -2px hsl(0 0% 0% / 0.4);
-    --shadow-card: 0 4px 16px -4px hsl(0 0% 0% / 0.5), 0 0 0 1px hsl(260 20% 22%);
-    --shadow-glow: 0 0 30px hsl(45 95% 60% / 0.3);
-    --shadow-glow-pink: 0 0 30px hsl(320 85% 65% / 0.3);
+        /* Vibrant gradients */
+        --gradient-warm: linear-gradient(135deg, hsl(45, 95%, 60%), hsl(320, 85%, 65%));
+        --gradient-success: linear-gradient(135deg, hsl(160, 70%, 55%), hsl(100, 70%, 60%));
+        --gradient-hero: linear-gradient(135deg, hsl(45, 95%, 60%) 0%, hsl(320, 85%, 65%) 50%, hsl(190, 75%, 60%) 100%);
+        --gradient-moody: linear-gradient(180deg, hsl(260, 40%, 8%) 0%, hsl(270, 50%, 12%) 100%);
 
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
+        /* Glowy shadows */
+        --shadow-soft: 0 2px 8px -2px hsl(0 0% 0% / 0.4);
+        --shadow-card: 0 4px 16px -4px hsl(0 0% 0% / 0.5), 0 0 0 1px hsl(260 20% 22%);
+        --shadow-glow: 0 0 30px hsl(45 95% 60% / 0.3);
+        --shadow-glow-pink: 0 0 30px hsl(320 85% 65% / 0.3);
+
+        /* Transitions */
+        --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+    * {
+        @apply border-border;
+    }
 
-  body {
-    @apply bg-background text-foreground;
-    position: relative;
-  }
-
-  /* Grainy/noisy texture overlay */
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.05;
-    z-index: -1;
-    pointer-events: none;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  }
+    body {
+        @apply bg-background text-foreground;
+        @apply selection:text-primary selection:bg-primary/10;
+    }
 }
